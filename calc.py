@@ -33,4 +33,5 @@ while s.lower() != 'end':
 
 print('Total:', total)
 for unit in units:
-    print(unit, 'x', total_changes[unit])
+    if total_changes[unit] > 0:
+        print(unit, 'x', total_changes[unit])
